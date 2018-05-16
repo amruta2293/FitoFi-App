@@ -1,0 +1,59 @@
+<!-- <div class="row">
+    <div class="column1" style="background-color:white;">
+        <app-profile></app-profile>
+        <div style="margin-top: 10px"><app-offers></app-offers></div>
+    </div>
+    <div class="column2" style="background-color:white;">
+        <app-post></app-post>
+    </div>
+    <div class="column3" style="background-color:white;">
+        <app-suggesion></app-suggesion>
+    </div>
+  </div> -->
+
+  <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.menu {
+    width: 25%;
+    float: left;
+    padding: 15px;
+    margin-left: 5%;
+    height: auto;    
+}
+.main {
+    width: 40%;
+    float: left;
+    padding: 15px;
+}
+.suggession {
+    width: 25%;
+    float: left;
+    padding: 15px;
+}
+
+</style>
+</head>
+<body>
+<div style="margin-top: 55px">
+<div class="menu">
+  <div class="fixed-top" style="margin-left: 6%;margin-top: 70px"><app-profile></app-profile></div>
+  <div class="fixed-top" style="margin-left: 6%;margin-top: 21%" ><app-offers></app-offers></div>
+</div>
+
+<div class="main">
+  <app-post></app-post>
+</div>
+
+<div class="suggession">
+    <div class="fixed-top" style="margin-left:72%;  margin-top: 70px"><app-suggesion></app-suggesion></div>
+  </div>
+</div>
+</body>
+</html>

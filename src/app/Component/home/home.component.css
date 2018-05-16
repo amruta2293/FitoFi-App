@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.column1 {
+    float: left;
+    width: 23.33%;
+    padding: 10px;
+    margin-left:100px;
+    margin-right: 1px;
+    height: 230px; /* Should be removed. Only for demonstration */
+}
+
+.column2 {
+    float: left;
+    width: auto;
+    padding: 5px;
+    margin-left: 1px;
+    margin-right: 1px;
+    height:50%; /* Should be removed. Only for demonstration */
+}
+
+.column3 {
+    float: right;
+    width: auto;
+    padding: 5px;
+    margin-left: 1px;
+    margin-right: 1px;
+    height: 150px; /* Should be removed. Only for demonstration */
+}
+
+.column4{
+    float: right;
+    width: auto;
+    padding: 5px;
+    margin-left: 1px;
+    margin-right: 1px;
+    height: 150px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.div{
+  margin:0px 0px 0px 0px;
+}
