@@ -1,0 +1,54 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+<div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+		<form role="form">
+			<h2 style="text-align: center">FiToFi <small>Please Sign Up</small></h2>
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6">
+					<div class="form-group">
+                        <input type="text" name="full_name" id="full_name" [(ngModel)]="full_name"  class="form-control input-lg" placeholder="Full Name" tabindex="1">
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6">
+					<div class="form-group">
+						<input type="text" name="email" id="email" [(ngModel)]="email"  class="form-control input-lg" placeholder="Email" tabindex="2">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<input type="text" name="user_name" id="user_name" [(ngModel)]="user_name" class="form-control input-lg" placeholder="Username" tabindex="3">
+			</div>
+			<div class="form-group">
+				<input type="text" name="mobile" id="mobile" [(ngModel)]="mobile"  class="form-control input-lg" placeholder="Mobile Number">
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-6">
+					<div class="form-group">
+						<input type="password" name="password" id="password" [(ngModel)]="password"  class="form-control input-lg" placeholder="Password" tabindex="5">
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-6 col-md-6">
+					<div class="form-group">
+						<input type="password" name="password_confirmation" id="password_confirmation" [(ngModel)]="password_confirmation"  class="form-control input-lg" placeholder="Confirm Password" tabindex="6">
+					</div>
+				</div>
+			</div>
+		
+			
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-md-6"><input type="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="7" (click)="register()"></div>
+				<div class="col-md-6"><a href="#" class="btn btn-success btn-block btn-lg" (click)="signIn()">Sign Me In</a></div>
+			</div>
+		</form>
+	</div>
+</div>
+
+</div>

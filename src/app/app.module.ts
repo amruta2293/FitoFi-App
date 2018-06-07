@@ -34,9 +34,16 @@ import { ProfileComponent } from './Component/home/profile/profile.component';
 import { OffersComponent } from './Component/home/offers/offers.component';
 import { SuggesionComponent } from './Component/home/suggesion/suggesion.component';
 import { NavbarComponent } from './Component/navbar/navbar.component';
+import { LoginComponent } from './login/login.component';
+import { DisplayDataComponent } from './display-data/display-data.component';
+import { FormsModule } from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
+
 const appRoutes: Routes = [
-  {path: 'home', component:HomeComponent},
-   
+  {path: 'home-cmp', component:HomeComponent},
+  {path: 'display', component:DisplayDataComponent},
+  {path:'',component:LoginComponent},
+  {path:'register',component:RegisterComponent}
   ]
 @NgModule({
   declarations: [
@@ -46,13 +53,16 @@ const appRoutes: Routes = [
     ProfileComponent,
     OffersComponent,
     SuggesionComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoginComponent,
+    DisplayDataComponent,
+    RegisterComponent
  
   ],
   imports: [
     BrowserModule,AngularFireModule.initializeApp(environment.firebase),AngularFireDatabaseModule,
       MatButtonModule,MatSelectModule, MatCheckboxModule,MatCardModule,MatGridListModule,MatInputModule,MatDatepickerModule,
-    RouterModule.forRoot(appRoutes), MatNativeDateModule,MatToolbarModule,MatListModule,MatIconModule,MatTabsModule, MatProgressSpinnerModule,
+    RouterModule.forRoot(appRoutes),FormsModule,MatNativeDateModule,MatToolbarModule,MatListModule,MatIconModule,MatTabsModule, MatProgressSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
